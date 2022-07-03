@@ -16,8 +16,7 @@
 
 html {
   scroll-behavior: smooth;
-  /* overflow: scroll; */
-  /* overflow-y: hidden; */
+  
 }
 
 /* Resetting the browser settings */
@@ -29,8 +28,6 @@ html {
 
 body {
   font-family: var(--font-family);
-  /* line-height: var(--line-height); */
-  /* overflow-y: hidden; */
 }
 
 a {
@@ -47,7 +44,6 @@ header {
   background-position: center top;
   height: 90vh;
   position: relative;
-  /* z-index: 3; */
 }
 .header-overlay {
   background-color: rgba(0, 0, 0, 0.8);
@@ -58,6 +54,7 @@ header {
 }
 
 /* Styling the navbar */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -65,9 +62,6 @@ nav {
   z-index: 1;
   position: sticky;
   padding: 1.4rem 5rem;
-  /* top: 0; */
-  /* left: 0; */
-  /* box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); */
   color: white;
   /* background-color: black; */
 }
@@ -97,17 +91,12 @@ nav ul a:hover {
 
 
 /* Styling the Hero section */
-#hero-section img {
-  max-height: 150px;
-  width: auto;
-  border-radius: 50%;
-  display: none;
-}
 #hero-section {
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: center;
+  flex-wrap: wrap;
   max-width: 68.5rem;
   margin: auto;
   gap: 1.5rem;
@@ -125,19 +114,6 @@ nav ul a:hover {
 }
 .current-work {
   font-size: 20px;
-}
-
-.hero-media a {
-  margin-right: 0.5rem;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 0.3rem;
-  border-radius: 50%;
-}
-.hero-media a:hover {
-  color: #fa0251;
-  border: 1px solid #fa0251;
-  transition: var(--transition);
 }
 
 .hero-btns button {
@@ -180,10 +156,11 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.8rem;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 .about-section img {
-  width: 30vw;
+  width: 400px;
   height: auto;
 }
 .about-brief {
@@ -192,6 +169,7 @@ button:hover {
   height: auto;
   font-size: large;
   color: rgba(255, 255, 255, 0.932);
+  line-height: var(--line-height);
 }
 
 /* STYLING THE WORKS SECTION */
@@ -218,6 +196,7 @@ button:hover {
   gap: 50px;
   padding: 5rem 15rem;
   padding-top: 1rem;
+  
 }
 .work-cards {
   padding: 15px;
@@ -331,6 +310,27 @@ color: #fa0251;
     font-size: larger;
     color: var(--primary-color);
 }
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1%;
+  bottom: 40%;
+}
+
+.socials svg {
+width: 1.3rem;
+height: 1.5rem;
+}
+.socials a {
+  color: #fa0251;
+  padding: 15px;
+}
+.socials a:hover {
+  opacity: 0.6;
+}
+
 footer {
   background-color: rgba(0, 0, 0, 0.5);
   margin-top: -5px;
@@ -340,3 +340,42 @@ footer {
   text-align: center;
   color: #000;
 }
+
+@media only screen  and (max-width: 500px) {
+  nav {
+    padding: 1.7rem 1rem;
+  }
+  nav ul {
+    gap: 1.3rem;
+    font-size: 1rem;
+  }
+  .logo {
+    font-size: 26px;
+  }
+  #hero-section {
+    max-width: 20rem;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+  }
+ .fullname {
+  font-size: 1.4rem;
+  line-height: 2rem;
+ }
+ .brief {
+  font-size: 1.2rem;
+  line-height: 2rem;
+ }
+ .current-work {
+  font-size: 1.1rem;
+ }
+.hero-btns button {
+ font-size: 0.8rem;
+}
+
+}
+.socials svg {
+  width: 1.1rem;
+  height: 1.5rem;
+}
+
+
