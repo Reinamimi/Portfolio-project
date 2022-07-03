@@ -188,16 +188,15 @@ button:hover {
   text-align: center;
 }
 .work-cards-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   text-align: center;
   margin: auto;
   justify-content: center;
   align-content: center;
   gap: 50px;
-  padding: 5rem 15rem;
-  padding-top: 1rem;
+  padding: 1rem 10rem;
   
 }
 .work-cards {
@@ -343,7 +342,7 @@ footer {
   color: #000;
 }
 
-@media only screen  and (max-width: 500px) {
+@media only screen  and (max-width: 600px) {
   nav {
     padding: 1.7rem 1rem;
   }
@@ -373,15 +372,12 @@ footer {
 .hero-btns button {
  font-size: 0.8rem;
 }
+.work-cards-wrapper {
+  padding: 1rem 2rem;
+}
 .socials svg {
   width: 1.1rem;
   height: 1.5rem;
-}
-.work-cards-wrapper {
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: auto;
-  margin: auto;
-  margin-left: -6rem; 
 }
 .contact-form {
   max-width: 365px;
