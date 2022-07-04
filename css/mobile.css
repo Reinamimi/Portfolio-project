@@ -1,0 +1,111 @@
+
+ @media (min-width: 501px)  and (max-width: 1100px) {
+ .work-cards-wrapper {
+    padding: 1rem 0.2rem;
+  }
+
+  #hero-section {
+    max-width: 35rem;
+    flex-wrap: wrap;
+    padding-top: 14rem;
+  }
+  .fullname {
+    font-size: 1.7rem;
+    line-height: 2rem;
+   }
+   .brief {
+    font-size: 1.4rem;
+    line-height: 1.7;
+   }
+   .current-work {
+    font-size: 1.2rem;
+   }
+  .hero-btns button {
+   font-size: 0.9rem;
+  }
+
+  .contact-form {
+    max-width: 370px;
+  }
+}
+
+
+
+@media screen  and (max-width: 500px) {
+    nav {
+      padding: 1.3rem 1.9rem;
+      position: relative;
+      z-index: 1;
+      background: none;
+    }
+    nav ul {
+      gap: 0.8rem;
+      font-size: 0.9rem;
+    }
+    nav .active {
+      padding-bottom: 0.4rem;
+    }
+    .logo {
+      font-size: 20px;
+    }
+
+    /* HERO SECTION */
+    #hero-section {
+      max-width: 20rem;
+      flex-wrap: wrap;
+      padding-top: 14rem;
+    }
+   .fullname {
+    font-size: 1.4rem;
+    line-height: 2rem;
+   }
+   .brief {
+    font-size: 1.2rem;
+    line-height: 2rem;
+   }
+   .current-work {
+    font-size: 1.1rem;
+   }
+  .hero-btns button {
+   font-size: 0.8rem;
+  }
+
+  /* ABOUT SECTION */
+  .about-content {
+    padding-top: 0.5rem;
+  }
+  .about-brief {
+    width: 70vw;
+  }
+
+
+  /* WORK SECTION */
+  .work-cards-wrapper {
+    padding: 1rem 0.2rem;
+  }
+
+  /* CONTACT SECTION */
+  .contact-form {
+    max-width: 300px;
+  }
+
+ /* Socials */
+
+  .socials svg {
+    width: 1.1rem;
+    height: 1.5rem;
+  }
+  .contact-form {
+    max-width: 365px;
+    margin: auto;
+  }
+  .input-field{
+    width: 300px;
+  }
+  .contact-section form{
+    width: 330px;
+  }
+  .send-btn {
+    width: 300px;
+  }
+  }
