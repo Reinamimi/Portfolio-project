@@ -28,6 +28,7 @@ html {
 
 body {
   font-family: var(--font-family);
+  background-color: #000;
 }
 
 a {
@@ -77,6 +78,8 @@ nav {
 .logo a {
   color: #fa0251;
   cursor: pointer;
+  text-decoration: none;
+
 }
 nav ul {
   display: flex;
@@ -86,13 +89,14 @@ nav ul {
 
 nav ul a {
   transition: var(--transition);
+  text-decoration: none;
   color: white;
   cursor: pointer;
 }
 nav ul a:hover {
   color: #fa0251
 }
-nav .active{
+nav ul a:active{
   border-bottom: 1px solid #fff ;
   padding-bottom: 0.4rem;
 }
@@ -105,13 +109,13 @@ nav .active{
   align-items: left;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 68.5rem;
+  max-width: 70vw;
   margin: auto;
   gap: 1.5rem;
-  padding-top: 17rem;
+  padding-top: 16rem;
   color: rgba(255, 255, 255, 0.9);
   position: relative;
-  margin-top: -5.15rem;
+  margin-top: -3.9rem;
   z-index: 1;
   line-height: 1.7;
 
@@ -125,7 +129,7 @@ nav .active{
  
 }
 .current-work {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .hero-btns button {
@@ -152,6 +156,46 @@ button:hover {
 .contact-me a {
   color: #fa0251;
 }
+
+/* STYLING THE SKILLS SECTION */
+
+.skills {
+  /* border: 5px solid red; */
+  /* padding: rem ; */
+  background-color: black
+ }
+ 
+ .skills h2 {
+   color: var(--primary-color);
+   padding-top: 2rem;
+   text-align: center;
+
+ }
+ 
+ .main-skills {
+   width: 95vw;
+   margin: auto;
+   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+   gap: 1rem;
+   /* background-color: aqua; */
+   border: none;
+   padding: 2rem;
+ }
+ 
+ .skill-block {
+   padding: 10% 10%;
+ }
+ 
+ .web-dev{
+   background-color: lightgrey
+ }
+ .design{
+   background-color: lightgrey;
+ }
+ 
 
 
 /* STYLING THE ABOUT SECTION */
@@ -182,6 +226,17 @@ button:hover {
   font-size: large;
   color: rgba(255, 255, 255, 0.932);
   line-height: var(--line-height);
+}
+
+/* styling the photos section */
+.Tiidelab-images h3 {
+  color: #fff;
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: auto;
 }
 
 /* STYLING THE WORKS SECTION */
@@ -246,6 +301,20 @@ p {
   opacity: 0.8;
 }
 
+
+/* styling the image gallery */
+.image-grid {
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  padding: 3rem;
+}
+
+#Tiidelab-images h3 {
+ color: #fff;
+ text-align: center;
+}
+
+
 /* STYLING THE CONTACT ME SECTION */
 .contact-section {
   background-color: #000;
@@ -256,6 +325,7 @@ p {
   max-width: 400px;
   margin: auto;
   padding: 1rem 1rem;
+  margin-bottom: 3rem;
 }
 .contact-section form{
   padding: 15px;
@@ -287,9 +357,23 @@ color: #fa0251;
     color: #fff;
 }
 
-
+.connect-section {
+  background-color: #000;
+}
+.hero-btns-base {
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  letter-spacing: 1px;
+  width: 150px;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 13px;
+  font-weight: bold;
+}
 .connect-title {
-    margin-top: 0.8rem;
+    /* margin-top: 0.8rem; */
     color: #fff;
     text-align: center;
     padding-top: 0.8rem;
@@ -328,6 +412,7 @@ color: #fa0251;
 .socials svg {
 width: 1.3rem;
 height: 1.5rem;
+animation: animated-icon 3s infinite ease-in-out
 }
 .socials a {
   color: #fa0251;
@@ -338,13 +423,21 @@ height: 1.5rem;
 }
 
 footer {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #000;
   margin-top: -5px;
+
 }
 .copyright {
-  padding: 0.6rem;
+  padding: 1.5rem;
   text-align: center;
-  color: #000;
+  color: #fff;
   letter-spacing: 0.4px;
+}
+
+@keyframes animated-icon {
+  0%   {fill: #fa0251;}
+  25%  {fill: blue;}
+  50%  {fill: white;}
+  100% {fill: green;}
 }
 

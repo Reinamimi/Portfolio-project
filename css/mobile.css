@@ -5,9 +5,9 @@
   }
 
   #hero-section {
-    max-width: 35rem;
+    max-width: 70vw;
     flex-wrap: wrap;
-    padding-top: 14rem;
+    padding-top: 10rem;
   }
   .fullname {
     font-size: 1.7rem;
@@ -32,6 +32,8 @@
 
 
 @media screen  and (max-width: 500px) {
+
+
     nav {
       padding: 1.3rem 1.9rem;
       position: relative;
@@ -51,9 +53,10 @@
 
     /* HERO SECTION */
     #hero-section {
-      max-width: 20rem;
+      max-width: 70vw;
       flex-wrap: wrap;
-      padding-top: 14rem;
+      padding-top: 10rem;
+      margin-top: -5.5rem;
     }
    .fullname {
     font-size: 1.4rem;
