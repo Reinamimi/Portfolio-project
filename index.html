@@ -28,12 +28,24 @@
       </div>
       <ul>
         <li class="active"><a href="/index.html">Home</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/projects.html">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
         <li><a href="/contact.html">Contact</a></li>
       </ul>
+      <div class="menu-container"  onclick="openNav()" >
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
     </nav>
 
+    <div id="mySidenav" class="sidenav">
+      <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
 
       <header class="header">
       <section id="hero-section">
@@ -370,11 +382,12 @@
   <!-- FOOTER SECTION -->
   <footer>
     <p class="copyright">
-      Copyright &copy; 2022, REINAMIMI. All Rights Reserved
+      Copyright &copy; 2022, REINAMIMI. All Rights Reserved 
     </p>
   </footer>
 
   <script>
+    // function to hide navbar on scroll down
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
@@ -385,5 +398,19 @@
       }
       prevScrollpos = currentScrollPos;
     }
+
+    // function to toggle nav menu bar
+    function myFunction(x) {
+       x.classList.toggle("change");
+      }
+
+      // function to open sidenav on Click
+      function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+      function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
     </script>
 </html>

@@ -15,7 +15,7 @@
       </div>
       <ul>
         <li class="active"><a href="/index.html">Home</a></li>
-        <li><a href="/about.html">About</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="/projects.html">Work</a></li>
         <li><a href="/contact.html">Contact</a></li>
       </ul>
@@ -49,4 +49,17 @@
     Copyright &copy; 2022, REINAMIMI. All Rights Reserved
   </p>
 </footer>
+
+<script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+  </script>
 </html>
